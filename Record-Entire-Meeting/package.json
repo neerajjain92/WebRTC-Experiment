@@ -29,8 +29,8 @@
     "muaz-khan"
   ],
   "dependencies": {
-    "socket.io": "0.9.17",
-    "mkdirp": "0.5.1",
+    "socket.io": "2.4.0",
+    "mkdirp": "0.5.2",
     "fluent-ffmpeg" : "2.0.1"
   },
   "analyze": false,

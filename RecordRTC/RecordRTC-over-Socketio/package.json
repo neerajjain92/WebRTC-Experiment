@@ -14,7 +14,9 @@
     }
   ],
   "scripts": {
-    "start": "node server.js"
+    "start": "node server.js",
+    "prepublish": "npm run snyk-protect",
+    "snyk-protect": "snyk-protect"
   },
   "main": "./server.js",
   "repository": {
@@ -43,9 +45,10 @@
   },
   "dependencies": {
     "recordrtc": "latest",
-    "socket.io": "^1.0.6",
+    "socket.io": "^3.0.0",
     "fluent-ffmpeg": "^1.7.2",
-    "node-uuid": "^1.4.1"
+    "node-uuid": "^1.4.1",
+    "@snyk/protect": "latest"
   },
   "readmeFilename": "README.md",
   "bugs": {
@@ -53,5 +56,6 @@
   },
   "homepage": "https://github.com/muaz-khan/RecordRTC/tree/master/RecordRTC-over-Socketio",
   "_id": "recordrtc-socketio@",
-  "_from": "recordrtc-socketio@"
+  "_from": "recordrtc-socketio@",
+  "snyk": true
 }
